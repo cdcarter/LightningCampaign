@@ -50,7 +50,7 @@ We're also going to create a picklist option for `Type` on Campaign called "Even
 3. Add "Event" to the `Type` picklist on Campaign
 4. Create a new Campaign called "Pre-Show Dinner" of type "Event" and used "Advanced Setup" to give it the Member Status options of "To Invite, Invited, RSVPd, Attended".
 
-![Campaign Member Status setup](http://i.imgur.com/TScIBqq.png)
+  ![Campaign Member Status setup](http://i.imgur.com/TScIBqq.png)
 
 5. Create a few contacts and some donations for them, so that we have some data to work with! You can use [this CSV file](https://www.dropbox.com/s/k21sd170ghk43qv/NPSP%20Data%20Contacts.csv?dl=0) with the NPSP data importer to add a pile of fake contacts.
 6. Add some of those contacts to the "Pre-Show Dinner" Campaign

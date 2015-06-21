@@ -5,5 +5,9 @@
         <members>TestCampaignMemberListController</members>
         <name>ApexClass</name>
     </types>
+    <types>
+    	<members>CampaignMember.RSVP_Status__c</members>
+    	<name>CustomField</name>
+    </types>
     <version>31.0</version>
 </Package>

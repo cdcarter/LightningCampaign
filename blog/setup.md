@@ -37,7 +37,7 @@ The this component is hosted in the mobile app, so the standard navigation heade
 
 In order to keep things simple, we're going to assume you are on stock NPSP 3.0 with the Household Account Model. In fact, I just spun up a new Developer Organization for myself and installed NPSP in an otherwise clean slate. If you want to follow along exactly, you can do the same. You can also start a new Developer Sandbox from your own organization, but be aware that you may need to tweak field names here and there. Particularly if you are not on the Household model, keep in mind where your donation rollups live.
 
-![Class Diagram for Contact, Campaign, and Campaign Membership](http://i.imgur.com/v4vrlKv.png)
+![Class Diagram for Contact, Campaign, and Campaign Membership](http://i.imgur.com/qjEefWn.png)
 
 For this app, we're going to use the standard Campaign and Campaign Member objects, in addition to Contact. We're using one standard rollup from the NPSP, and we are creating one custom field on Campaign Member called `RSVP_Status__c`. We'll use this field to store if a Contact RSVP'd Yes, Maybe, or No. This is in addition to the CampaignMember Status. CampaignMember `Status` will have the options of "To Invite, Invited, RSVPd, Attended". The combination of the two fields will let us know how many of our people respond to our invites, how many people attended the party in total, how many of our "Maybe" RSVPers attended, and how many of our "Yes" RSVPers didn't attend. These are all useful metrics that your events manager will love.
 
@@ -55,4 +55,4 @@ We're also going to create a picklist option for `Type` on Campaign called "Even
 5. Create a few contacts and some donations for them, so that we have some data to work with! You can use [this CSV file](https://www.dropbox.com/s/k21sd170ghk43qv/NPSP%20Data%20Contacts.csv?dl=0) with the NPSP data importer to add a pile of fake contacts.
 6. Add some of those contacts to the "Pre-Show Dinner" Campaign
 7. Enable Lightning Components for your organization. This is found in Setup -> Develop -> Lightning Components. Check "Enable Lightning Components in Salesforce1 (BETA)", accept the pop-up, and then hit save.
-8. Wait for the next installment!
+8. (Head on to Module 2, Creating an Apex Controller).

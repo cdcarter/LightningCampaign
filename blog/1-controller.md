@@ -104,4 +104,10 @@ We're going to do a very simple test that makes sure our method is pulling the r
 
 WHEW! That's a long test. The first method here is actually just creating a bunch of data for us. Our tests don't have access to any of the data in our organization (stopping your tests from accidentally deleting or changing real data) so we have to create a structure first.
 
-The second method is our actual test. It runs our controller method, and makes sure the result is what we expected. 
+The second method is our actual test. It runs our controller method, and makes sure the result is what we expected. Now, we don't test all of the edge cases here, but it's a good enough start to get code coverage and to know that our code is doing something close to what we want it to do. What other scenarios does our test need to cover?
+
+* Does the controller properly handle LOTS of records, or does something go wrong over 100? 
+* Does the controller properly not return Leads?
+* Does the controller still do what we expect if more than one Campaign exists?
+
+Try your hand at implementing these tests too (or don't!) and then move on to [Module 2: The CampaignMemberList Component]().

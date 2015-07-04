@@ -1,4 +1,4 @@
-# Let's make it usable.
+# Let's make it usable. (which maybe in an alternate universe, this tutorial starts with making resuable components out of the sfdc styleguide)
 
 Now, we have our data displaying in a component. It just doesn't look great. Thankfully, the folks at Salesforce created a [style guide for Salesforce1](http://sfdc-styleguide.herokuapp.com/). We're going to use their CSS and all. First step is to upload [this file](https://raw.githubusercontent.com/cdcarter/LightningCampaign/master/sf1style.css) as a static resource called `sf1guide` with Cache Control set to public.
 

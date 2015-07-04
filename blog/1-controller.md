@@ -55,7 +55,7 @@ The method then goes on to execute one SOQL query and return the results. SOQL c
 
 We then get a little more specific with our `WHERE` clause. We want to only get members who are a part of the campaign that we passes as a parameter. We want to only get members that are Contacts (not Leads), and we want to only get members who have RSVPd or Attended the event.
 
-## The test
+## The test (a section i maybe cut entirely)
 
 If you know much about Apex, you know that for every class we must have a test! The test makes sure that our code is doing what we want it to do, and is playing nicely with the rest of our instance. Without good tests, little changes in your software or your org might ruin your code in ways you wouldn't notice until too far down the line.
 

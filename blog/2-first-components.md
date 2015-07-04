@@ -171,3 +171,5 @@ Now, go to http://your-salesforce-instance.salesforce.com/one/one.app and login!
 It may not be pretty yet...but it's there, and so is your data!
 
 ![The data](https://dl.dropboxusercontent.com/spa/q8pc7mthv83x9i1/2015-07-03-13h44m/images/docs/untitled/salesforce1.png)
+
+Let's move on to [Part 3](), add some style!

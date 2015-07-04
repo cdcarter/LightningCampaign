@@ -1,0 +1,14 @@
+<aura:component >
+<aura:attribute name="cmember" type="CampaignMember"/>
+<aura:attribute name="attended" type="Boolean" default="false"/>
+<article class="mtn mam bg-1 border border--3 pam brm">
+	<h1 class="man f3 text-color-1 fw-semibold">
+        <ui:outputText value="{!v.cmember.Contact.Name}" click="{!c.gotoRecord}"/>
+    </h1>
+	<ul class="clear list-plain man pan">
+		<li class="mbs f5 text-color-2">RSVP <ui:outputText value="{!v.cmember.RSVP_Status__c}"/></li>
+        <li class="fl f3 text-color-1"><ui:outputCurrency value="{!v.cmember.Contact.npo02__OppAmountThisYear__c}"/> in Current Fiscal Year</li>
+        <li class="fr f3 text-color-1"><ui:inputCheckbox value="{!v.attended}"></ui:inputCheckbox></li>
+  	</ul>
+</article>
+</aura:component>

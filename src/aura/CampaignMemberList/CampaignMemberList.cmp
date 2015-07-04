@@ -1,0 +1,23 @@
+<aura:component implements="force:appHostable" controller="CampaignMemberListController">
+<ltng:require styles="/resource/sf1guide?1"/>
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<aura:attribute name="cmembers" type="CampaignMember[]"/>
+
+<div class="sf1guide">
+
+<header class="bg-2" label="8 Opportunities" title="Opportunities" icon="opportunity">
+	<div class="icon icon--opportunity brs bgs-100 a-mid mhm sq-30"></div>
+	<h1 class="dib thin a-mid">
+		<span class="db f3 text-color-1">Campaign Members</span>
+   		<span class="db f6 lower">
+			<ui:outputText value="{!v.cmembers.length}"/> Campaign Members
+     	</span>
+	</h1>
+</header>
+    
+<aura:iteration var="cmember" items="{!v.cmembers}">
+	<c:CampaignMemberListRow cmember="{!cmember}"/>
+</aura:iteration>
+    
+</div>
+</aura:component>

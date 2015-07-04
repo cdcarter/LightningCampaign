@@ -39,7 +39,8 @@ We're going to accomplish this with a SOQL query. Sometimes creating a SOQL quer
             return [SELECT Contact.Name, 
                     Contact.npo02__OppAmountThisYear__c,
                     Status,
-                    RSVP_Status__c 
+                    RSVP_Status__c,
+                    ContactId
                     FROM CampaignMember 
                     WHERE CampaignId =: campaignId 
                       AND ContactId != null 
